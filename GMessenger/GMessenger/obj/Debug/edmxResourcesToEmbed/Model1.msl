@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="gconnectdbModelStoreContainer" CdmEntityContainer="gconnectdbEntities">
+    <EntitySetMapping Name="Groups">
+      <EntityTypeMapping TypeName="gconnectdbModel.Group">
+        <MappingFragment StoreEntitySet="Group">
+          <ScalarProperty Name="group_id" ColumnName="group_id" />
+          <ScalarProperty Name="group_name" ColumnName="group_name" />
+          <ScalarProperty Name="group_admin_pass" ColumnName="group_admin_pass" />
+          <ScalarProperty Name="group_user_pass" ColumnName="group_user_pass" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Messages">
+      <EntityTypeMapping TypeName="gconnectdbModel.Message">
+        <MappingFragment StoreEntitySet="Message">
+          <ScalarProperty Name="message_id" ColumnName="message_id" />
+          <ScalarProperty Name="group_id" ColumnName="group_id" />
+          <ScalarProperty Name="text" ColumnName="text" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
